@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Crush</title>
+    <style>
+        p {
+            text-align: center;
+            font-size: 32px;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+        }
+    </style>
+    </head>
+    <body>
+        <p>Want to hangout with me?</p>
+        <img src="https://1.bp.blogspot.com/-CwIjwA56di8/WAT57UzNF8I/AAAAAAAAT_4/hihRJMxwtTAUsT5S3AfeeA1iZF9JWvd7wCLcB/s1600/Una%2Brosa%2Bpara%2Bti%2Bcon%2Btierno%2Bperrito.gif" alt="GIF animado">
+    </body>
+    <title>random</title>
+    <style>
+        #botao1 {
+                    position: fixed;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+        }
+        #botao2 {
+                    position: absolute;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+        }
+    </style>
+    </head>
+    <body>
+            <button id="botao1">Yes!</button>
+            <button id="botao2">No !</button>
+        <script>
+            botao2.style.left = 50 + "%";
+            botao2.style.top = 60 + "%";
+            document.getElementById('botao2').addEventListener('click',function() {
+            var botao2 = document.getElementById('botao2');
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+            botao2.style.left = x + 'px';
+            botao2.style.top = y + 'px';
+            })
+        </script>
+        <script>document.getElementById('botao1').addEventListener('click', function() {
+            alert('Koi bhi random link pe click nhi karte');
+        });
+        </script>
+    </body>
+</html>
